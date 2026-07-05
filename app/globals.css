@@ -288,6 +288,15 @@ body {
   text-shadow: 2px 2px 0px #ffffff;
 }
 
+/* Instagram embeds: the embed script hardcodes min-width: 326px !important on
+   its iframe, which overflows small phones inside padded cards. Clamp it. */
+.instagram-media,
+iframe.instagram-media {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+
 /* Scroll-reveal (driven by ScrollReveal.tsx) */
 [data-reveal] {
   opacity: 0;

@@ -27,6 +27,7 @@ export default function InstagramFeed() {
     const script = document.createElement("script");
     script.src = "https://www.instagram.com/embed.js";
     script.async = true;
+    script.onload = () => window.instgrm?.Embeds.process();
     document.body.appendChild(script);
   }, []);
 
@@ -41,7 +42,7 @@ export default function InstagramFeed() {
             className="instagram-media"
             data-instgrm-permalink={url}
             data-instgrm-version="14"
-            style={{ margin: 0, width: "100%", minHeight: 420, border: 0 }}
+            style={{ margin: 0, width: "100%", maxWidth: "100%", minWidth: 0, minHeight: 420, border: 0 }}
           >
             <a href={url} target="_blank" rel="noopener noreferrer">
               View this post on Instagram

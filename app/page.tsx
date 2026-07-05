@@ -120,7 +120,7 @@ export default function Home() {
           </div>
 
           {/* Mascot right — absolute on desktop so content layout stays fixed */}
-          <div className="animate-fade-up [animation-delay:80ms] relative flex justify-center items-center self-center shrink-0 h-[22rem] w-[22rem] sm:h-[28rem] sm:w-[28rem] md:absolute md:-right-10 md:-bottom-24 lg:-right-14 lg:-bottom-28 md:h-[40rem] md:w-[40rem] lg:h-[46rem] lg:w-[46rem]">
+          <div className="animate-fade-up [animation-delay:80ms] relative flex justify-center items-center self-center shrink-0 h-80 w-80 sm:h-[28rem] sm:w-[28rem] md:absolute md:-right-10 md:-bottom-24 lg:-right-14 lg:-bottom-28 md:h-[40rem] md:w-[40rem] lg:h-[46rem] lg:w-[46rem]">
             {/* glow behind mascot */}
             <div
               className="animate-glow-pulse pointer-events-none absolute inset-6 rounded-full bg-sky/40 blur-3xl"
@@ -217,7 +217,7 @@ export default function Home() {
                 Lane 5, North Main Road · Daily 12pm – 11pm
               </p>
             </div>
-            <div className="mt-6 flex-1 min-h-56 rounded-2xl border-2 border-cream overflow-hidden shadow-[4px_4px_0px_var(--color-sky)]">
+            <div className="mt-6 aspect-video md:aspect-auto md:flex-1 md:min-h-56 rounded-2xl border-2 border-cream overflow-hidden shadow-[4px_4px_0px_var(--color-sky)]">
               <iframe
                 title="Sai Laban location on Google Maps — Koregaon Park, Pune"
                 src="https://maps.google.com/maps?q=Sai+Laban+Koregaon+Park+Pune&z=15&output=embed"
